@@ -1,0 +1,48 @@
+.contenedor {
+  /* background-color: #415661; */
+  max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 0px;
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.derecha {
+  font-size: 20px;
+  gap: 55px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  margin-right: 50px;
+}
+
+.derecha li a {
+  text-decoration: none;
+  color: white;
+}
+
+.derecha li a:hover {
+  background-color: rgb(25, 27, 26);
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .derecha {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,54 @@
+body{
+background-image: url("https://static.vecteezy.com/system/resources/previews/016/219/099/non_2x/gradient-black-background-with-golden-diagonal-lines-vector.jpg");
+background-size: 100vw 100vh;
+background-attachment: fixed;
+margin: 0;
+font-family: monospace;
+
+}
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+h2{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width:100% ;
+}
+#boton{
+    background: #31384a;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+#boton:hover{
+    background-color: #80aff7;
+    color: black;
+    cursor: pointer;
+}
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
