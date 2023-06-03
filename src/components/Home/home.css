@@ -1,14 +1,22 @@
+
+
 body{
   background-image: url("https://r1.ilikewallpaper.net/pic/201608/papers_co_sj25_blue_soft_pastel_gradation_blur_34_iphone6_plus_wallpaper_640.jpg");
   background-size: 100vw 100vh;
 }
+.container{
+  text-align: center;
+  color: white;
+}
 .img-presentacion {
+  margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50vh;
   }
   .img-presentacion img{
+    
     border-radius: 205px;
   }
   .sobre {
@@ -22,11 +30,12 @@ body{
     height: 50vh;
     color: white;
   }
-  
+ 
   .sobre h1,
   .sobre p {
     text-align: center;
     text-align: justify;
+    
   }
   
   /* .seccion{
@@ -37,6 +46,7 @@ body{
   .habilidades{
     text-align: center;
     color: white;
+    overflow: hidden;
   }
   /* .skills-container {
     display: flex;
@@ -44,26 +54,44 @@ body{
     justify-content: center;
   } */
   
-  .conten1 {
-    width: 25%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  .conten1,
+.conten2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+  .conten1 img,
+.conten2 img {
+  max-width: 200%;
+  height: auto;
+  margin: auto;
+}
+
+  .proyectos{
+    padding: 45px;
     text-align: center;
-    width: 650px;
-    height: 200px;
-    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
     
+    .sobre{
+      width: 90%;
+    }
+    .conten1 img,
+    .conten2 img{
+      width: 20%;
+    }
   }
-  .conten2 {
-    width: 25%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    text-align: center;
-    width: 650px;
-    margin: 0 auto;
-  }
-
-
   
+  /* Estilos para pantallas de hasta 480px de ancho */
+  @media (max-width: 480px) {
+    .sobre {
+      font-size: 10px;
+    }
+    .conten1 img,
+    .conten2 img {
+      width: 20%;
+    }
+  }

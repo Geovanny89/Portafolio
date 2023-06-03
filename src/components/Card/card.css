@@ -1,0 +1,46 @@
+.card{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    width: auto;
+    padding: 10px;
+    padding-left: 350px;
+    gap: 50px;
+}
+.card-dog{
+    /* border: 1px solid rgb(71, 67, 67); */
+    border-radius: 10px ;
+    width: 300px;
+    height: 450px;
+}
+.card-pokemon{
+    /* border: 1px solid rgb(85, 79, 79); */
+    border-radius: 10px;
+    width: 300px;
+    height: 450px;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+    }
+  
+    .card-dog,
+    .card-pokemon {
+      width: 100%;
+      max-width: 300px;
+      height: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      font-size: 12px;
+    }
+  }

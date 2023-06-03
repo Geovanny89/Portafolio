@@ -1,11 +1,12 @@
 body{
-background-image: url("https://static.vecteezy.com/system/resources/previews/016/219/099/non_2x/gradient-black-background-with-golden-diagonal-lines-vector.jpg");
+/* background-image: url("https://static.vecteezy.com/system/resources/previews/016/219/099/non_2x/gradient-black-background-with-golden-diagonal-lines-vector.jpg"); */
 background-size: 100vw 100vh;
 background-attachment: fixed;
 margin: 0;
 font-family: monospace;
 
 }
+
 form{
     width: 450px;
     margin: auto;
@@ -15,12 +16,27 @@ form{
     margin-top: 20px;
     border-radius: 20px;
 }
+.btn{
+    color: rgb(255, 253, 253);
+    background-color: #31384a;
+    border-radius: 7px;
+    display: flex;
+    margin-left: 350px;
+}
+.btn:hover{
+    background-color: #80aff7;
+    color: rgb(8, 8, 8);
+}
 h2{
     color: white;
     text-align: center;
     margin: 0;
     font-size: 30px;
     margin-bottom: 20px;
+}
+label{
+    color: #fff;
+    font-size: 15px;
 }
 input, textarea{
     width: 100%;

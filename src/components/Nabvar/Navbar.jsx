@@ -1,5 +1,6 @@
 import React from 'react'
 import './navbar.css'
+import { Link } from 'react-router-dom'
 import logo from '../../assets/logopagina.png'
 
 
@@ -15,8 +16,8 @@ export default function Navbar() {
                     <div className='derecha'>
                         <li><a href="#sobre-mi">Sobre Mi</a></li>
                         <li><a href="#skill" >Skill</a></li>
-                        <li><a href="#">Proyectos</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><Link to="/contacto" className='link-contacto'><a href="#">Contacto</a></Link></li>
 
                     </div>
                 </ul>

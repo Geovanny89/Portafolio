@@ -1,11 +1,16 @@
 .contenedor {
-  /* background-color: #415661; */
   max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
   margin: 0 auto; /* Centra el contenedor horizontalmente */
   padding: 0px;
 }
 
 .navegacion {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,11 +43,14 @@
 }
 
 .derecha li a:hover {
-  background-color: rgb(25, 27, 26);
+  background-color: rgb(102, 124, 113);
   border-radius: 5px;
+  text-decoration: none;
 }
 @media (max-width: 768px) {
   .derecha {
-    font-size: 14px;
+    gap: 20px;
+    font-size: 10px;
   }
 }
+

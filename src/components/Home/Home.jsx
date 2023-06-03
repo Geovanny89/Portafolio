@@ -5,16 +5,22 @@ import css from '../../assets/css.png'
 import javascript from '../../assets/JavaScript-Logo.png'
 import node from '../../assets/nodejs.png'
 import react from '../../assets/react.png'
-import redux from '../../assets/redux.jpg'
-import postgres from '../../assets/postgres.png'
+import redux from '../../assets/redux.png'
+import postgres from '../../assets/post.png'
 import mongo from '../../assets/mongodb.png'
+import 'animate.css';
+
 
 
 import Navbar from '../Nabvar/Navbar'
 import './home.css'
+
+import Card from '../Card/Card'
+import CardFront from '../Card/CardFront'
+
 export default function Home() {
     return (
-        <div>
+        <div className='container'>
             <Navbar />
 
             <div className='img-presentacion'>
@@ -35,28 +41,43 @@ export default function Home() {
                     <h2>SKILL</h2>
                     <div className='skills-container' >
                         <div className='conten1'>
-                            <img src={html} width="130px" height="130px" alt="img Not Found" />
+                            <img src={html} width="130px" height="130px" alt="img Not Found" className="animate__animated animate__bounceIn"/>
 
-                            <img src={css} width="130px" height="130px" alt="Img not found" />
+                            <img src={css} width="130px" height="130px" alt="Img not found" className="animate__animated animate__bounceIn" />
 
-                            <img src={javascript} width="250px" height="130px" alt="Img not found" />
+                            <img src={javascript} width="250px" height="130px" alt="Img not found" className="animate__animated animate__bounceIn"/>
 
-                            <img src={node} width="130px" height="130px" alt="Img not found" />
+                            <img src={node} width="130px" height="130px" alt="Img not found" className="animate__animated animate__bounceIn"/>
 
                         </div>
                         <b></b><br />
                         <div className='conten2'>
-                            <img src={react} width="130px" height="130px" alt="Img not found" />
+                            <img src={react} width="130px" height="130px" alt="Img not found" className="animate__animated animate__bounceIn"/>
 
-                            <img src={redux} width="180px" height="130px" alt="Img not found" />
+                            <img src={redux} width="180px" height="130px" alt="Img not found" className="animate__animated animate__bounceIn"/>
 
-                            <img src={postgres} width="180px" height="130px" alt="Img not found" />
+                            <img src={postgres} width="180px" height="130px" alt="Img not found" className="animate__animated animate__bounceIn"/>
 
-                            <img src={mongo} width="180px" height="130px" alt="Img not found" />
+                            <img src={mongo} width="180px" height="130px" alt="Img not found" className="animate__animated animate__bounceIn"/>
 
                         </div>
 
 
+                    </div>
+                </div>
+                <div className="proyectos">
+                    <div id='proyectos'>
+                    <h1>FULLSTACK</h1>
+                        <Card/>
+                        
+                    </div>
+                    <div>
+                        <h1>FRONTEND</h1>
+                        <CardFront/>
+                    </div>
+                    <div>
+                        <h1>BACKEND</h1>
+                        <Card/>
                     </div>
                 </div>
             

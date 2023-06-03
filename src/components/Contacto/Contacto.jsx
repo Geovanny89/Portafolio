@@ -1,11 +1,13 @@
 import React from 'react'
 import './contacto.css'
+import { Link } from 'react-router-dom'
 
 export default function Contacto() {
   return (
     <div>
         <form action="">
-                <h2>Contacto</h2>   
+                <Link to="/"><button className='btn'>Volver</button></Link> 
+                <h2>Contacto</h2>  
                 <label htmlFor="">Nombre </label>
                 <input type="text" name="nombre" id="nombre" placeholder='nombre' />
             
