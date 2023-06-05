@@ -24,9 +24,11 @@
 }
 
 .logo img {
-  margin: 0;
+  margin-left: 35px;
   padding: 0;
   display: block;
+  border-radius: 15px;
+  
 }
 
 .derecha {

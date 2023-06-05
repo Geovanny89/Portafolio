@@ -21,7 +21,7 @@ form{
     background-color: #31384a;
     border-radius: 7px;
     display: flex;
-    margin-left: 350px;
+    margin-left: 80%;
 }
 .btn:hover{
     background-color: #80aff7;

@@ -13,6 +13,8 @@ export default function Contacto() {
             
                 <label htmlFor="">Apellido</label>
                 <input type="text" name='apellido' id='apellido' placeholder='Apellido'/>
+                <label htmlFor="">Telefono</label>
+                <input type="text" name='telefono' id='telefono' placeholder='Telefono'/>
            
                 <label htmlFor="">Mensaje</label>
                 <textarea name="mensaje" placeholder='Escriba su mensaje'></textarea>

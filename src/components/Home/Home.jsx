@@ -1,5 +1,6 @@
 import React from 'react'
-import foto from '../../assets/fotoCv.png'
+// import foto from '../../assets/fotoCv.png'
+import foto from '../../assets/imagen.jpg'
 import html from '../../assets/html.png'
 import css from '../../assets/css.png'
 import javascript from '../../assets/JavaScript-Logo.png'
@@ -17,6 +18,7 @@ import './home.css'
 
 import Card from '../Card/Card'
 import CardFront from '../Card/CardFront'
+import Footer from '../Footer/Footer'
 
 export default function Home() {
     return (
@@ -24,7 +26,7 @@ export default function Home() {
             <Navbar />
 
             <div className='img-presentacion'>
-                <img src={foto} width="300px" height="300px" alt="" />
+                <img src={foto} width="200px" height="250px" alt="" />
 
             </div>
             <div className='seccion'>
@@ -82,6 +84,8 @@ export default function Home() {
                 </div>
             
             </div>
+            <hr />
+            <Footer/>
         </div>
     )
 }
