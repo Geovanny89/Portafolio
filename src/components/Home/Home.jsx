@@ -33,8 +33,13 @@ export default function Home() {
 
                 <div className='sobre' id='sobre-mi'>
                     <h1>Sobre Mi</h1>
-                    <p >
-                        ¡Hola! Soy el Ing. de Sistemas Geovanni Casadiegos Rodriguez, Desarrollador Full Stack Developer con formación como Diseñador Web,poseo experiencia trabajando en NodeJS, React, Redux, SQL entre otras tecnologías del sector, me apasiona la tecnología, mi fuerte es el Back, soy graduado de la Corporación Universitaria Remington Colombia, soy técnico en sistemas y tecnólogo en redes de computadores.
+                    <p className='justificado'>
+                    ¡Hola, Geovanni Casadiegos Rodriguez, Ingeniero de Sistemas! 👋 Soy un Desarrollador Full Stack con amplia experiencia en diversas tecnologías del sector. Mi formación incluye habilidades como Diseñador Web, lo que me permite crear interfaces atractivas y funcionales.
+                        <br />
+                        <br />
+                        Como desarrollador, he trabajado en proyectos utilizando NodeJS, React, Redux y SQL, entre otras tecnologías. Me apasiona la tecnología y me especializo en el desarrollo Backend, lo que me permite crear aplicaciones robustas y escalables.
+                        <br /><br />
+                        Estoy emocionado de poner mis habilidades al servicio de proyectos desafiantes y colaborar en equipos multidisciplinarios. Si necesitas ayuda en el desarrollo de tu proyecto, no dudes en contar conmigo.
 
                     </p>
 

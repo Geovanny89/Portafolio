@@ -17,7 +17,8 @@ export default function Navbar() {
                         <li><a href="#sobre-mi">Sobre Mi</a></li>
                         <li><a href="#skill" >Skill</a></li>
                         <li><a href="#proyectos">Proyectos</a></li>
-                        <li><Link to="/contacto" className='link-contacto'><a href="#">Contacto</a></Link></li>
+                        
+                        <li><Link to="/contacto" className='link-contacto'>Contacto</Link></li>
 
                     </div>
                 </ul>

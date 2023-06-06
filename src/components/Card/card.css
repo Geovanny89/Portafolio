@@ -107,10 +107,14 @@
   }
   
   p {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
+		-webkit-hyphens: auto; 
+		hyphens: auto;
     
-    font-size: 20px;
-    color: #fff;
+    font-size: 15px;
+    color: #ccc;
     padding: 20px;
   }
   ion-icon{
