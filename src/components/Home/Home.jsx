@@ -6,8 +6,8 @@ import css from '../../assets/css.png'
 import javascript from '../../assets/JavaScript-Logo.png'
 import node from '../../assets/nodejs.png'
 import react from '../../assets/react.png'
-import redux from '../../assets/redux.png'
-import postgres from '../../assets/post.png'
+import redux from '../../assets/red.png'
+import postgres from '../../assets/postg.png'
 import mongo from '../../assets/mongodb.png'
 import 'animate.css';
 
@@ -19,6 +19,7 @@ import './home.css'
 import Card from '../Card/Card'
 import CardFront from '../Card/CardFront'
 import Footer from '../Footer/Footer'
+import CardBack from '../Card/CardBack'
 
 export default function Home() {
     return (
@@ -73,18 +74,18 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="proyectos">
-                    <div id='proyectos'>
+                    <div id='fullstack'>
                     <h1>FULLSTACK</h1>
                         <Card/>
                         
                     </div>
-                    <div>
+                    <div id='frontend'>
                         <h1>FRONTEND</h1>
                         <CardFront/>
                     </div>
-                    <div>
+                    <div id='backend'>
                         <h1>BACKEND</h1>
-                        <Card/>
+                        <CardBack/>
                     </div>
                 </div>
             

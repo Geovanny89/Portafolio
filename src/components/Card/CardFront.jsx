@@ -1,32 +1,12 @@
 import React from 'react'
 import peliculas from '../../assets/pelicula.png'
 import pizza from '../../assets/pizza.png'
+import portafolio from '../../assets/portafolio.png'
 import './cardFront.css'
 
 export default function CardFront() {
   return (
     <div className='conten-front'>
-      <div className='cardContainer'>
-
-        <div className="front">
-          <h1>SPA PELICULAS</h1>
-          <img src={peliculas} width="200px" height="130px" alt="" />
-
-        </div>
-        <div className="back">
-
-          <p>Aplicacion creada con react que consume una api y permite ver peliculas disponibles</p>
-
-
-        </div>
-        <div>
-          <a href="https://github.com/Geovanny89/PI-DOGS-HENRY"><ion-icon name="logo-github"></ion-icon></a>
-          <a href="https://www.linkedin.com/in/geovanny-casadiegos-rodriguez-86154a143/"><ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-          <a href="https://p1-app-peliculas.netlify.app/" ><ion-icon name="create-outline"></ion-icon></a>
-        </div>
-      </div>
-
       <div className='cardContainer'>
 
         <div className="front">
@@ -41,10 +21,51 @@ export default function CardFront() {
 
         </div>
         <div>
-          <a href="https://github.com/Geovanny89/PI-DOGS-HENRY"><ion-icon name="logo-github"></ion-icon></a>
+          <a href="https://github.com/Geovanny89/pizzeriariccodipizza"><ion-icon name="logo-github"></ion-icon></a>
           <a href="https://www.linkedin.com/in/geovanny-casadiegos-rodriguez-86154a143/"><ion-icon name="logo-linkedin"></ion-icon>
           </a>
           <a href="https://app-pizzas.netlify.app/" ><ion-icon name="create-outline"></ion-icon></a>
+        </div>
+      </div>
+      <div className='cardContainer'>
+
+        <div className="front">
+          <h1>SPA PELICULAS</h1>
+          <img src={peliculas} width="200px" height="130px" alt="" />
+
+        </div>
+        <div className="back">
+
+          <p>Aplicacion creada con react que consume la api themoviedb, permite ver el listado de peliculas disponibles.
+            <br />
+          Relizada con React, Javascrip, axios.
+          </p>
+          
+
+
+        </div>
+        <div>
+          <a href="https://github.com/Geovanny89/SPA-peliculas"><ion-icon name="logo-github"></ion-icon></a>
+          <a href="https://www.linkedin.com/in/geovanny-casadiegos-rodriguez-86154a143/"><ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://p1-app-peliculas.netlify.app/" ><ion-icon name="create-outline"></ion-icon></a>
+        </div>
+      </div>
+
+
+      <div className='card-container'>
+        <div className='card-front'>
+          <h1>PORTAFOLIO</h1>
+          <img src={portafolio} width="200px" height="200px" alt="Img not Found" />
+        </div>
+        <div className='card-back'>
+          <p>Portafolio de servicios, realizado con React y Javascript </p>
+        </div>
+        <div>
+          <a href="https://github.com/Geovanny89/Portafolio"><ion-icon name="logo-github"></ion-icon></a>
+          <a href="https://www.linkedin.com/in/geovanny-casadiegos-rodriguez-86154a143/"><ion-icon name="logo-linkedin"></ion-icon>
+          {/* <a href="https://p1-app-peliculas.netlify.app/" ><ion-icon name="create-outline"></ion-icon></a> */}
+          </a>
         </div>
       </div>
     </div>

@@ -9,18 +9,20 @@
   top: 0;
   left: 0;
   width: 100%;
-
+ 
   z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
   padding: 0;
+
 }
 
 .logo {
   display: flex;
   align-items: center;
+  
 }
 
 .logo img {
@@ -45,10 +47,42 @@
 }
 
 .derecha li a:hover {
-  background-color: rgb(102, 124, 113);
+  background-color: rgb(255, 255, 255);
+  color: black;
   border-radius: 5px;
   text-decoration: none;
 }
+.submenu {
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: rgb(0, 0,0.0.8);
+  list-style-type: none;
+  padding: 0;
+  position: absolute; /* Agregado */
+  
+  
+}
+
+.submenu li {
+  margin-bottom: 10px;
+}
+
+.submenu li a {
+  margin: 10px;
+  display: block;
+  padding: 5px 10px;
+  
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+
+.submenu li a:hover {
+  background-color: #ddd;
+}
+
+
 @media (max-width: 768px) {
   .derecha {
     gap: 20px;
