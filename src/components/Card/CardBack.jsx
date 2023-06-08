@@ -12,7 +12,8 @@ export default function CardBack() {
           <img src={musica} width="200px" height="140px" alt="Img Not Found" />
         </div>
         <div className='card-back'>
-          <p>Api creada con NodeJs, express, javascript, perimite mostrar canciones,crear ,actualizar y eliminar. 
+          <p>Api creada con NodeJs, Express, Javascript, permite mostrar canciones,crear , actualizar y eliminar.
+            se implemento autenticación con JWT. 
             
           </p>
         </div>

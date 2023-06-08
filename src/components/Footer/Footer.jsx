@@ -14,6 +14,7 @@ export default function Footer() {
     };
     return (
         <div className='footer'>
+            <h1>Redes sociales</h1>
             <div className='iconos'>
 
                 <ion-icon name="logo-github" onClick={handleGitHubClick}></ion-icon>
@@ -21,7 +22,6 @@ export default function Footer() {
                 <ion-icon name="logo-linkedin" onClick={handleLinkedInClick}></ion-icon>
             </div>
 
-            <h1>Redes sociales</h1>
 
         </div>
     )

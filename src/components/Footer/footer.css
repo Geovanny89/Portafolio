@@ -1,13 +1,16 @@
 
-  
-  .iconos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30px; /* Establece la altura deseada */
-    /* Otros estilos que desees aplicar */
-  }
-  
-  
-  
-  
+
+.footer h1 {
+  margin-bottom: 10px;
+}
+
+.footer .iconos {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .iconos ion-icon {
+  margin: 10px;
+}

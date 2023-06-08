@@ -1,51 +1,8 @@
-/* .card{
-   
-    display: flex;
-    flex-direction: row;
-    color: white;
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
-    width: auto;
-    padding: 10px;
-    padding-left: 350px;
-    gap: 50px;
-}
-.card-dog{
-    
-    border-radius: 10px ;
-    width: 300px;
-    height: 450px;
-}
-.card-pokemon{
 
-    border-radius: 10px;
-    width: 300px;
-    height: 450px;
-}
-
-@media (max-width: 768px) {
-    .card {
-      flex-direction: column;
-      align-items: center;
-      padding-left: 0;
-    }
-  
-    .card-dog,
-    .card-pokemon {
-      width: 100%;
-      max-width: 300px;
-      height: 80%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .card {
-      font-size: 12px;
-    }
-  } */
   .card {
     display: flex;
+    font-size: 15px;
+    font-family: sans-serif;
     justify-content: space-around;
     align-items: center;
     width: 100%;

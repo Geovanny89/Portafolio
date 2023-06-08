@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // import foto from '../../assets/fotoCv.png'
 import foto from '../../assets/imagen.jpg'
 import html from '../../assets/html.png'
@@ -9,8 +9,9 @@ import react from '../../assets/react.png'
 import redux from '../../assets/red.png'
 import postgres from '../../assets/postg.png'
 import mongo from '../../assets/mongodb.png'
-import 'animate.css';
-
+// import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 import Navbar from '../Nabvar/Navbar'
@@ -22,6 +23,9 @@ import Footer from '../Footer/Footer'
 import CardBack from '../Card/CardBack'
 
 export default function Home() {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <div className='container'>
             <Navbar />
@@ -32,10 +36,11 @@ export default function Home() {
             </div>
             <div className='seccion'>
 
-                <div className='sobre' id='sobre-mi'>
+                <div className='sobre' id='sobre-mi' >
                     <h1>Sobre Mi</h1>
-                    <p className='justificado'>
-                    ¡Hola, Geovanni Casadiegos Rodriguez, Ingeniero de Sistemas! 👋 Soy un Desarrollador Full Stack con amplia experiencia en diversas tecnologías del sector. Mi formación incluye habilidades como Diseñador Web, lo que me permite crear interfaces atractivas y funcionales.
+                    <p className='justificado' data-aos="fade-down-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                        ¡Hola, Geovanni Casadiegos Rodriguez, Ingeniero de Sistemas! 👋 Soy un Desarrollador Full Stack con amplia experiencia en diversas tecnologías del sector. Mi formación incluye habilidades como Diseñador Web, lo que me permite crear interfaces atractivas y funcionales.
                         <br />
                         <br />
                         Como desarrollador, he trabajado en proyectos utilizando NodeJS, React, Redux y SQL, entre otras tecnologías. Me apasiona la tecnología y me especializo en el desarrollo Backend, lo que me permite crear aplicaciones robustas y escalables.
@@ -48,50 +53,50 @@ export default function Home() {
                 <div className='habilidades' id='skill'>
                     <h2>SKILL</h2>
                     <div className='skills-container' >
-                        <div className='conten1'>
-                            <img src={html} width="130px" height="130px" alt="img Not Found" className="animate__animated animate__bounceIn"/>
+                        <div className='conten1' >
+                            <img src={html} width="130px" height="130px" alt="img Not Found" data-aos="zoom-in" />
 
-                            <img src={css} width="130px" height="130px" alt="Img not found" className="animate__animated animate__bounceIn" />
+                            <img src={css} width="130px" height="130px" alt="Img not found" data-aos="zoom-in" />
 
-                            <img src={javascript} width="250px" height="130px" alt="Img not found" className="animate__animated animate__bounceIn"/>
+                            <img src={javascript} width="250px" height="130px" alt="Img not found" data-aos="zoom-in" />
 
-                            <img src={node} width="130px" height="130px" alt="Img not found" className="animate__animated animate__bounceIn"/>
+                            <img src={node} width="130px" height="130px" alt="Img not found" data-aos="zoom-in" />
 
                         </div>
                         <b></b><br />
                         <div className='conten2'>
-                            <img src={react} width="130px" height="130px" alt="Img not found" className="animate__animated animate__bounceIn"/>
+                            <img src={react} width="130px" height="130px" alt="Img not found" data-aos="zoom-in" />
 
-                            <img src={redux} width="180px" height="130px" alt="Img not found" className="animate__animated animate__bounceIn"/>
+                            <img src={redux} width="180px" height="130px" alt="Img not found" data-aos="zoom-in" />
 
-                            <img src={postgres} width="180px" height="130px" alt="Img not found" className="animate__animated animate__bounceIn"/>
+                            <img src={postgres} width="180px" height="130px" alt="Img not found" data-aos="zoom-in" />
 
-                            <img src={mongo} width="180px" height="130px" alt="Img not found" className="animate__animated animate__bounceIn"/>
+                            <img src={mongo} width="180px" height="130px" alt="Img not found" data-aos="zoom-in" />
 
                         </div>
 
 
                     </div>
                 </div>
-                <div className="proyectos">
+                <div className="proyectos" >
                     <div id='fullstack'>
-                    <h1>FULLSTACK</h1>
-                        <Card/>
-                        
+                        <h1>FULLSTACK</h1>
+                        <Card />
+
                     </div>
-                    <div id='frontend'>
+                    <div id='frontend' >
                         <h1>FRONTEND</h1>
-                        <CardFront/>
+                        <CardFront />
                     </div>
                     <div id='backend'>
                         <h1>BACKEND</h1>
-                        <CardBack/>
+                        <CardBack />
                     </div>
                 </div>
-            
+
             </div>
             <hr />
-            <Footer/>
+            <Footer />
         </div>
     )
 }
