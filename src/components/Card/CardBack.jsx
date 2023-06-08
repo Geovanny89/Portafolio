@@ -12,7 +12,7 @@ export default function CardBack() {
           <img src={musica} width="200px" height="140px" alt="Img Not Found" />
         </div>
         <div className='card-back'>
-          <p>Aplicación en la cual se consume una API que permite filtrar por orden alfabético, por razas y crear nuevos Perros.
+          <p>Api creada con NodeJs, express, javascript, perimite mostrar canciones,crear ,actualizar y eliminar. 
             
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function CardBack() {
           <img src={inventario} width="200px" height="140px" alt="Img not Found" />
         </div>
         <div className='card-back'>
-          <p>Aplicación en la cual se consume una API que permite filtrar por orden alfabético, por tipo y crear nuevos Pokemons.</p>
+          <p>Api creada con NodeJs, express, javascript,que perimite mostrar,crear ,actualizar y eliminar productos y asi tener control de los equipos que existen en la empresa. </p>
         </div>
         <div>
           <a href="https://github.com/Geovanny89/inventario"><ion-icon name="logo-github"></ion-icon></a>
