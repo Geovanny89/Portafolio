@@ -1,67 +1,69 @@
 .contenedor {
-  max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
-  padding: 0px;
-}
+ 
 
-.navegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Alinea los elementos a los extremos */
+ 
+}
+ul.navegacion.scroll {
+  background: radial-gradient(circle, rgb(41, 38, 38) 0%, rgba(107, 117, 113, 0.152) 100%);
+  /* Otros estilos adicionales que desees aplicar */
+}
+.navegacion{
+  /* background: rgb(75, 65, 69);
+  background: radial-gradient(circle, rgb(122, 116, 119) 0%, rgba(83, 105, 96, 0.152) 100%); */
   position: fixed;
-  top: 0;
-  left: 0;
+  margin: 0; /* Centra el contenedor horizontalmente */
+  padding: 5px;
   width: 100%;
-  
   z-index: 999;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   list-style-type: none;
-  padding: 0;
+  gap: 150px;
+  list-style-type: none;
+  font-size: 15px;
 
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  
 }
 
 .logo img {
-  margin-left: 35px;
+
   padding: 0;
   display: block;
   border-radius: 15px;
+  transition: transform 0.3s ease; 
+  height: 60px;
+}
+.logo img:hover{
+  transform: scale(1.2); 
   
 }
-
-.derecha {
-  font-size: 20px;
-  gap: 55px;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  margin-right: 50px;
-}
-
-.derecha li a {
-  text-decoration: none;
+.navegacion li a {
+  text-decoration: none; /* Quita el subrayado */
   color: white;
+  
 }
-
-.derecha li a:hover {
+.navegacion li a:hover{
   background-color: rgb(255, 255, 255);
   color: black;
   border-radius: 5px;
   text-decoration: none;
 }
+
+
 .submenu {
- 
- 
   list-style-type: none;
+  margin: 0;
   padding: 0;
   position: absolute;
-  left: 78%;
-
+  display: none;
 }
 
+.submenu.show {
+  display: block; /* Mostrar el submenú cuando se activa */
+}
 .submenu li {
   margin-bottom: 10px;
 }
@@ -80,12 +82,19 @@
 .submenu li a:hover {
   background-color: #ddd;
 }
-
-
 @media (max-width: 768px) {
-  .derecha {
-    gap: 20px;
-    font-size: 10px;
+  .navegacion {
+    flex-direction: row;
+    gap: 10px;
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .navegacion li {
+    text-align: center;
+  }
+
+  .logo img {
+    margin-left: 0;
   }
 }
-
