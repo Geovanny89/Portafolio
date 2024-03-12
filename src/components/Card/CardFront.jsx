@@ -2,6 +2,7 @@ import React from 'react'
 import peliculas from '../../assets/pelicula.png'
 import pizza from '../../assets/pizza.png'
 import portafolio from '../../assets/portafolio.png'
+import laboratorio from '../../assets/laboratorio.png'
 import './cardFront.css'
 
 export default function CardFront() {
@@ -36,9 +37,9 @@ export default function CardFront() {
         </div>
         <div className="back">
 
-          <p>Aplicacion creada con react que consume la api themoviedb, permite ver el listado de peliculas disponibles.
+          <p>Aplicación creada con react que consume la api themoviedb, permite ver el listado de peliculas disponibles.
             <br />
-          Relizada con React, Javascrip, axios.
+          Técnologias React, Javascrip, axios.
           </p>
           
 
@@ -56,7 +57,7 @@ export default function CardFront() {
       <div className='card-container'>
         <div className='card-front'>
           <h1>PORTAFOLIO</h1>
-          <img src={portafolio} width="200px" height="200px" alt="Img not Found" />
+          <img src={portafolio} width="200px" height="180px" alt="Img not Found" />
         </div>
         <div className='card-back'>
           <p>Portafolio de servicios, realizado con React y Javascript </p>
@@ -64,7 +65,22 @@ export default function CardFront() {
         <div>
           <a href="https://github.com/Geovanny89/Portafolio"><ion-icon name="logo-github"></ion-icon></a>
           <a href="https://www.linkedin.com/in/geovanny-casadiegos-rodriguez-86154a143/"><ion-icon name="logo-linkedin"></ion-icon>
-          {/* <a href="https://p1-app-peliculas.netlify.app/" ><ion-icon name="create-outline"></ion-icon></a> */}
+          
+          </a>
+        </div>
+      </div>
+      <div className='card-container'>
+        <div className='card-front'>
+          <h1>LABORATORIO TÉXTIL</h1>
+          <img src={laboratorio} width="200px" height="150px" alt="Img not Found" />
+        </div>
+        <div className='card-back'>
+          <p>Portafolio de Laboratorio Téxtil del Centro Técnologico De Cúcuta </p>
+        </div>
+        <div>
+          <a href="https://github.com/Geovanny89/laboratorioctc"><ion-icon name="logo-github"></ion-icon></a>
+          <a href="https://www.linkedin.com/in/geovanny-casadiegos-rodriguez-86154a143/"><ion-icon name="logo-linkedin"></ion-icon>
+          <a href="https://hilarious-llama-da5232.netlify.app/" ><ion-icon name="create-outline"></ion-icon></a>
           </a>
         </div>
       </div>

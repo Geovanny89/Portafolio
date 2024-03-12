@@ -42,11 +42,14 @@ ul.navegacion.scroll {
 }
 .navegacion li a {
   text-decoration: none; /* Quita el subrayado */
-  color: white;
+  color: rgb(20, 20, 20);
   
 }
+.navegacion.scroll li a {
+  color: white; /* Letras blancas al hacer scroll */
+}
 .navegacion li a:hover{
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   color: black;
   border-radius: 5px;
   text-decoration: none;

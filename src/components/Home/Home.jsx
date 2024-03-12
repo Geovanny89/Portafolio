@@ -37,7 +37,7 @@ export default function Home() {
             <div className='seccion'>
 
                 <div className='sobre' id='sobre-mi' >
-                    <h1>Sobre Mi</h1>
+                    <h1>Desarrollador FullStack</h1>
                     <p className='justificado' data-aos="fade-down-right" data-aos-offset="300"
                         data-aos-easing="ease-in-sine">
                         ¡Hola, Geovanni Casadiegos Rodriguez, Ingeniero de Sistemas! 👋 Soy un Desarrollador Full Stack con amplia experiencia en diversas tecnologías del sector. Mi formación incluye habilidades como Diseñador Web, lo que me permite crear interfaces atractivas y funcionales.
@@ -63,7 +63,7 @@ export default function Home() {
                             <img src={node} width="130px" height="130px" alt="Img not found" data-aos="zoom-in" />
 
                         </div>
-                        <b></b><br />
+                        
                         <div className='conten2'>
                             <img src={react} width="130px" height="130px" alt="Img not found" data-aos="zoom-in" />
 
@@ -85,7 +85,7 @@ export default function Home() {
 
                     </div>
                     <div id='frontend' >
-                        <h1>FRONTEND</h1>
+                        <h1 id='title'>FRONTEND</h1>
                         <CardFront />
                     </div>
                     <div id='backend'>

@@ -13,7 +13,7 @@ export default function Card() {
           <img src={dog} width="200px" height="200px" alt="Img Not Found" />
         </div>
         <div className='card-back'>
-          <p>Aplicación en la cual se consume la API thedogap, permite filtrar por orden alfabético, por razas y crear nuevos Perros.
+          <p>Aplicación que consume la API TheDogApp, permite filtrar por orden alfabético, por razas y crear nuevos Perros.
           <br /><br />
             Tecnologias utilizadas: 
             <br /> <br />
