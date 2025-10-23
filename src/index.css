@@ -1,0 +1,33 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0d0d0d;
+  --card: #111218;
+  --muted: #9ca3af;
+  --accent: #00adb5;
+}
+
+.light {
+  --bg: #ffffff;
+  --card: #f8fafc;
+  --muted: #6b7280;
+  --accent: #007bff;
+}
+
+body {
+  background-color: var(--bg);
+  color: white;
+}
+
+.light body {
+  color: #0b1220;
+}
+
+/* small utility */
+.glass {
+  backdrop-filter: blur(6px);
+  background: rgba(255,255,255,0.03);
+}
