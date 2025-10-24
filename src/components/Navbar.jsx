@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { FiMoon, FiSun } from "react-icons/fi";
+import { FiMoon, FiSun, FiMenu, FiX } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 export default function Navbar({ theme, setTheme }) {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
@@ -38,8 +39,8 @@ export default function Navbar({ theme, setTheme }) {
           Geo<span className="text-indigo-500">Dev</span>
         </a>
 
-        {/* Links */}
-        <div className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-500 dark:text-white-500">
+        {/* Links para pantallas grandes */}
+        <div className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-500 dark:text-white">
           {links.map(({ label, href }) => (
             <a
               key={href}
@@ -54,22 +55,59 @@ export default function Navbar({ theme, setTheme }) {
 
         {/* Botones */}
         <div className="flex items-center gap-4">
+          {/* Botón modo oscuro */}
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             aria-label="Toggle theme"
-            className="p-2 rounded-md hover:scale-110 active:rotate-12 transition-transform text-gray-800 dark:text-white-500"
+            className="p-2 rounded-md hover:scale-110 active:rotate-12 transition-transform text-gray-800 dark:text-gray-100"
           >
             {theme === "dark" ? <FiSun size={20} /> : <FiMoon size={20} />}
           </button>
 
+          {/* Botón de contacto visible solo en desktop */}
           <a
             href="#contact"
             className="hidden md:inline-block px-4 py-2 rounded-lg border border-indigo-400 text-sm font-medium text-gray-800 dark:text-gray-100 hover:bg-indigo-500 hover:text-white transition-all duration-300"
           >
             Contactar
           </a>
+
+          {/* Botón menú hamburguesa en móviles */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden p-2 text-gray-800 dark:text-gray-100"
+          >
+            {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+          </button>
         </div>
       </nav>
+
+      {/* Menú móvil desplegable */}
+      {menuOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="md:hidden flex flex-col items-center gap-4 py-4 bg-white/80 dark:bg-gray-900/90 backdrop-blur-md text-gray-800 dark:text-gray-100 border-t border-gray-200 dark:border-gray-700"
+        >
+          {links.map(({ label, href }) => (
+            <a
+              key={href}
+              href={href}
+              onClick={() => setMenuOpen(false)}
+              className="text-sm font-medium hover:text-indigo-500 dark:hover:text-indigo-400 transition"
+            >
+              {label}
+            </a>
+          ))}
+          <a
+            href="#contact"
+            onClick={() => setMenuOpen(false)}
+            className="px-4 py-2 rounded-lg border border-indigo-400 text-sm font-medium hover:bg-indigo-500 hover:text-white transition-all duration-300"
+          >
+            Contactar
+          </a>
+        </motion.div>
+      )}
     </motion.header>
   );
 }
